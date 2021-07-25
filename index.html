@@ -728,7 +728,7 @@
 
       $("#name").keyup(function(){
          let nameValue = this.value
-         let nameRegex = /^[a-zA-Z]*$/
+         let nameRegex =/^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
          if(nameRegex.test(nameValue)){
            nameChecking = true
            $("#name-alert").html("")
